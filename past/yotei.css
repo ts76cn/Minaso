@@ -1,0 +1,393 @@
+@charset "utf-8";
+/* -------------------------------------------------------------------
+GLOBAL RESET
+------------------------------------------------------------------- */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+* {
+	font-family: Verdana, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", Arial, Helvetica, sans-serif;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background:#000;
+	color:#FFF;
+	font-size:90%;
+	line-height:130%;
+}
+ul {
+	list-style: none;
+}
+img, table {
+	border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+}
+br.clear {
+	clear: both;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px;	
+	padding: 0px;	
+}
+p.tensen {
+	margin: 0px;
+	padding: 0px;
+	font-size: 0px;
+	line-height: 0px;
+	border-bottom: dotted 1px #888;
+}
+/* -------------------------------------------------------------------
+BASIC TEXT LINK
+------------------------------------------------------------------- */
+a {
+	color: #FFCC00;
+	text-decoration: none;
+}
+a:hover {
+	color:#FF6633;
+	text-decoration: none;
+}
+/* -------------------------------------------------------------------
+LAYOUT CONTAINERS-common-
+------------------------------------------------------------------- */
+div#container {
+	width: 640px;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: left;
+}
+div#header {
+	width: 640px;
+	height: 60px;
+	margin: 16px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	text-align: left;
+	background:#444;
+}
+div#center {
+	width: 640px;
+	margin: 0px;
+	padding: 0px;	
+	text-align: left;
+}
+div#footer {
+	width: 640px;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;	
+	text-align: right;
+	border-top: solid 1px #666;
+}
+/* -------------------------------------------------------------------
+table id.yotei
+------------------------------------------------------------------- */
+table#yotei {
+	border-top:1px solid #333;
+	border-left:1px solid #333;
+	border-collapse:collapse;
+	border-spacing:0;
+	empty-cells:show;
+	margin: 0px;
+	padding: 0px;	
+	/*background:#555555;*/
+	/*border:solid 1px #000;*/
+}
+table#yotei th, td{
+	font-size:100%;
+	margin: 0px;
+	padding: 2px 6px 2px 6px;	
+	border-right: solid 1px #000;
+	border-bottom: solid 1px #000;
+	vertical-align: middle;
+}
+table#yotei th {
+	color:#EEE;
+	text-align: center;
+	font-weight: normal;
+	background:#555;
+}
+table#yotei th.day {
+	width:70px;
+}
+table#yotei th.time {
+	width:80px;
+}
+table#yotei th.place {
+	width:90px;
+}
+table#yotei th.court {
+	width:40px;
+}
+table#yotei th.sewanin {
+	width:250px;
+}
+table#yotei th.member {
+	width:110px;
+}
+table#yotei th.joinBtn {
+	width:80px;
+}
+table#yotei th.sewaninJoin {
+	width:180px;
+}
+table#yotei th.memberJoin {
+	width:100px;
+}
+table#yotei td.center {
+	text-align: center;
+}
+table#yotei tr.AAA {
+	color:#000;
+	background:#AAA;
+}
+
+table#yotei tr.BBB {
+	color:#000;
+	background:#BBB;
+}
+table#yotei div.comment {
+	margin: 5px 0px 5px 0px;
+	padding: 5px;
+	color:#000;
+	background:#EEE;
+	text-align: left;
+	/*font-size:90%;*/
+	border: solid 1px #999;
+}
+/* -------------------------------------------------------------------
+table id.add
+------------------------------------------------------------------- */
+table#add {
+	border-top:1px solid #333;
+	border-left:1px solid #333;
+	border-collapse:collapse;
+	border-spacing:0;
+	empty-cells:show;
+	margin: 0px;
+	padding: 0px;	
+	text-align: left;
+	/*background:#555555;*/
+	/*border:solid 1px #000;*/
+}
+table#add td.addLeft{
+	width:120px;
+	font-size:100%;
+	margin: 0px;
+	padding: 2px 6px 2px 6px;	
+	border-right: solid 1px #000;
+	border-bottom: solid 1px #000;
+	vertical-align: middle;
+	background:#555;
+}
+table#add td.addRight{
+	width:500px;
+	font-size:100%;
+	margin: 0px;
+	padding: 6px 6px 6px 6px;	
+	border-right: solid 1px #000;
+	border-bottom: solid 1px #000;
+	vertical-align: middle;
+	background:#CCC;
+	color:#000;
+}
+table#add td.addRight select {
+	margin: 0px 5px 0px 0px;
+}
+br.addRight {
+	margin: 0px 0px 10px 0px;
+}
+span.green {
+	color: #CCFF66;
+}
+/* -------------------------------------------------------------------
+LAYOUT Form-
+------------------------------------------------------------------- */
+div.submit {
+	width: 450px;
+	height: 60px;
+	margin: 20px 0px 10px 0px;
+	padding: 0px 0px 0px 190px;
+	text-align: center;
+}
+div.submitEdit2 {
+	width: 610px;
+	height: 60px;
+	margin: 0px 0px 0px 0px;
+	padding: 40px 0px 0px 20px;
+	text-align: center;
+}
+form#btnAdd {
+	display: block;
+	float: left;
+}
+form#btnEdit {
+	display: block;
+	float: left;
+}
+input#btnAdd {
+	width: 130px;
+}
+input#btnEdit {
+	width: 130px;
+}
+div.submitbtnAddKakunin {
+	width: 450px;
+	height: 60px;
+	margin: 20px 0px 10px 0px;
+	padding: 0px 0px 0px 190px;
+	text-align: center;
+}
+input#btnAddKakunin {
+	display: block;
+	float: left;
+	width: 130px;
+	margin: 20px 5px 10px 0px;
+}
+input#btnAddReset {
+	display: block;
+	float: left;
+	width: 130px;
+	margin: 20px 0px 10px 5px;
+}
+div.submitDel2 {
+	width: 460px;
+	height: 60px;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 10px 180px;
+	text-align: center;
+}
+form#btnDel {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	display: block;
+	float: left;
+}
+input#btnDel {
+	width: 130px;
+	margin: 0px 5px 10px 0px;
+}
+input#btnDelBack {
+	width: 130px;
+	margin: 18px 5px 10px 0px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+}
+div.submitJoin2 {
+	width: 640px;
+	height: 160px;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+div.caution {
+	width: 630px;
+	margin: 10px 0px 20px 0px;
+	padding: 5px;	
+	text-align: center;
+	background:#444;
+	font-size:100%;
+	color: #FFCC00;
+}
+form#btnJoin {
+	width: 630px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+}
+form#btnJoin div.btnJoinForm {
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 25px 0px;
+}
+form.formCancel {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+/* -------------------------------------------------------------------
+LAYOUT header-common-
+------------------------------------------------------------------- */
+div#headerLeft {
+	padding: 10px 0px 10px 10px;	
+	width: 240px;
+	float: left;
+}
+div#headerRight {
+	padding: 10px 10px 10px 0px;	
+	width: 350px;
+	float: right;
+	text-align: right;
+	font-size:90%;
+}
+div#headerRight form {
+	text-align: right;
+}
+div#header h1{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	text-align: left;
+	color: #FFCC00;
+	font-size:100%;
+}
+div#container h2{
+	width: 630px;
+	margin: 10px 0px 10px 0px;
+	padding: 5px;	
+	text-align: left;
+	background:#444;
+	font-size:100%;
+}
+p.header {
+	clear: both;
+	margin: 10px 0px 16px 0px;
+	padding: 4px;	
+	text-align: left;
+	color: #CCC;
+	font-size:90%;
+}
+/* -------------------------------------------------------------------
+LAYOUT center-form-
+------------------------------------------------------------------- */
+div#center form {
+	margin: 15px 0px 21px 0px;
+	padding: 4px;	
+	text-align: right;
+	color: #CCC;
+	font-size:90%;
+}
+div#center form input#pass {
+	margin: 0px 5px 0px 5px;
+	width: 110px;
+}
+div#main {
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+}
+div#main p.welcome {
+	text-align: center;
+	font-size:100%;
+	padding: 0px 0px 25px 0px;
+}
+div#main ul li {
+	padding: 0px 0px 10px 0px;
+}
+div#center p {
+	clear: both;
+	margin: 10px 0px 16px 0px;
+	padding: 4px;	
+	text-align: left;
+	color: #CCC;
+	font-size:90%;
+}
+/* -------------------------------------------------------------------
+LAYOUT footer-common-
+------------------------------------------------------------------- */
+div#footer p{
+	margin: 5px 0px 11px 0px;
+	color: #CCC;
+	font-size:80%;
+}
