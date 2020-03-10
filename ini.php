@@ -32,7 +32,7 @@ define("_DB_NAME", "minaso");
 // データベース接続ユーザー名
 define("_DB_USER", "minasouser");
 // データベース接続パスワード
-define("_DB_PASS", "22MlXzZsm3YYewb5");
+define("_DB_PASS", "password");
 
 // データソースネーム
 define("_DSN", _DB_TYPE . ":host=" . _DB_HOST . ";dbname=" . _DB_NAME. ";charset=utf8");
