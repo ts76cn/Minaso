@@ -1,5 +1,6 @@
 # 遊び約束連絡帳　みんなで遊ぼう！【仙台版】 ver.1.0
-
+<img width="1201" alt="main" src="https://user-
+images.githubusercontent.com/55599388/76420796-05411280-63e6-11ea-9de3-2c56c05567f8.png">
 ・掲示板PHPアプリです。
 ・MySQL（phpmyadmin）使用。
 ・PHPが主体ですが、機能のselectメニューでJavaScriptを使用しています。
