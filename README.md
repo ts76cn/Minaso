@@ -11,6 +11,7 @@
 -　予定の修正<br>
 ![edit2](https://user-images.githubusercontent.com/55599388/76420756-f65a6000-63e5-11ea-99ad-586198cedfb2.jpg)
 -　予定の削除<br>
+<img width="1293" alt="del1" src="https://user-images.githubusercontent.com/55599388/76420783-ffe3c800-63e5-11ea-8931-ce41a2607f00.png">
 -　予定への参加表明<br>
 -　予定への参加表明取り消し<br>
 <img width="1326" alt="cancel" src="https://user-images.githubusercontent.com/55599388/76420778-fd816e00-63e5-11ea-91c8-4898f4f39054.png">
