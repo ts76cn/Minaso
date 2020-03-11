@@ -9,6 +9,7 @@
 -　予定の登録<br>
 ![add](https://user-images.githubusercontent.com/55599388/76420585-b09d9780-63e5-11ea-87e6-39f028eff801.jpg)
 -　予定の修正<br>
+![edit2](https://user-images.githubusercontent.com/55599388/76420756-f65a6000-63e5-11ea-99ad-586198cedfb2.jpg)
 -　予定の削除<br>
 -　予定への参加表明<br>
 -　予定への参加表明取り消し<br>
