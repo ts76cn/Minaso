@@ -13,6 +13,7 @@
 -　予定の削除<br>
 -　予定への参加表明<br>
 -　予定への参加表明取り消し<br>
+<img width="1326" alt="cancel" src="https://user-images.githubusercontent.com/55599388/76420778-fd816e00-63e5-11ea-91c8-4898f4f39054.png">
 
 -　ログイン機能<br>
 ・メールアドレスの仮登録後、URLリンク付メールが送信され本登録画面へ遷移。
