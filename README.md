@@ -13,6 +13,7 @@
 -　予定の削除<br>
 <img width="1293" alt="del1" src="https://user-images.githubusercontent.com/55599388/76420783-ffe3c800-63e5-11ea-8931-ce41a2607f00.png">
 -　予定への参加表明<br>
+<img width="570" alt="join2" src="https://user-images.githubusercontent.com/55599388/76420786-02462200-63e6-11ea-8fe8-c7a4fde40457.png">
 -　予定への参加表明取り消し<br>
 <img width="1326" alt="cancel" src="https://user-images.githubusercontent.com/55599388/76420778-fd816e00-63e5-11ea-91c8-4898f4f39054.png">
 
