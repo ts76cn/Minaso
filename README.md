@@ -32,6 +32,7 @@
 <img width="1326" alt="cancel" src="https://user-images.githubusercontent.com/55599388/76420778-fd816e00-63e5-11ea-91c8-4898f4f39054.png"><br>
 
 ## ⑥ログインアドレス登録<br>
+![mail](https://user-images.githubusercontent.com/55599388/76593091-a2ac5b80-6538-11ea-8f81-b825caae385f.jpg)<br>
 
 ## ⑦ログイン認証<br>
 ![login](https://user-images.githubusercontent.com/55599388/76591783-b5bd2c80-6534-11ea-989e-cd23b28447a2.jpg)<br>
