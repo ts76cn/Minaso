@@ -1,6 +1,8 @@
 # みんなで遊ぼう！仙台
 ・子供の遊び約束を目的とした掲示板です。
 
+<img width="1201" alt="main" src="https://user-images.githubusercontent.com/55599388/76591382-88bc4a00-6533-11ea-9c55-49cfe4086c5b.png">
+
 ## Description　説明
 ・予定の登録・修正・削除・メンバー参加・メンバー取り消し機能があります。<br>
 
