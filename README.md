@@ -17,7 +17,7 @@
 
 ## Description　説明
 ## ①予定の登録<br>
-![add](https://user-images.githubusercontent.com/55599388/76420585-b09d9780-63e5-11ea-87e6-39f028eff801.jpg)<br>
+![add](https://user-images.githubusercontent.com/55599388/76592587-29603900-6537-11ea-8930-57df31bd3b08.jpg)<br>
 
 ## ②予定の修正<br>
 ![edit2](https://user-images.githubusercontent.com/55599388/76420756-f65a6000-63e5-11ea-99ad-586198cedfb2.jpg)<br>
