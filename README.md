@@ -20,7 +20,7 @@
 ![add](https://user-images.githubusercontent.com/55599388/76592587-29603900-6537-11ea-8930-57df31bd3b08.jpg)<br>
 
 ## ②予定の修正<br>
-![edit2](https://user-images.githubusercontent.com/55599388/76420756-f65a6000-63e5-11ea-99ad-586198cedfb2.jpg)<br>
+![edit](https://user-images.githubusercontent.com/55599388/76592820-dcc92d80-6537-11ea-94d9-5e4aa1b7a871.jpg)<br>
 
 ## ③予定の削除<br>
 <img width="1293" alt="del1" src="https://user-images.githubusercontent.com/55599388/76420783-ffe3c800-63e5-11ea-8931-ce41a2607f00.png"><br>
