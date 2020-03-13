@@ -1,12 +1,7 @@
-# みんなで遊ぼう！【仙台版】
+# みんなで遊ぼう！仙台
 ・子供の遊び約束を目的とした掲示板です。
-<img width="1201" alt="main" src="https://user-images.githubusercontent.com/55599388/76420796-05411280-63e6-11ea-9de3-2c56c05567f8.png"><br>
 
-
-
-・PHPが主体ですが、機能のselectメニューでJavaScriptを使用しています。
-
-## 機能について
+## Description　説明
 ・予定の登録・修正・削除・メンバー参加・メンバー取り消し機能があります。<br>
 
 -　予定の登録<br>
@@ -24,32 +19,14 @@
 <img width="701" alt="login" src="https://user-images.githubusercontent.com/55599388/76420792-03774f00-63e6-11ea-8394-30e0a5a100cd.png"><br>
 ・メールアドレスの仮登録後、URLリンク付メールが送信され本登録画面へ遷移。
 
-## 動作環境
-- PHP5.4 以降
-- MySQL5.0 以降
-で動作すると思われます。
-
-## USAGE
-設定ファイル「ini.php」を環境に合わせて編集する必要があります。
-
-
-
-# 子連れOK！仙台のバー・ダイニングバー
-・飲食店APIを用いたGoogle Mapsへのマーカー表示
-
-## Description　説明
-・リクルートAPI利用
-・子供を連れていける仙台駅・国分町・一番町周辺のバー・ダイニングバーのおすすめ１０店を抽出
-・Google Maps上にマーカー表示しています。
-・吹き出しには店舗名称とURLを表示しています。
-
-## Demonstration
-<img width="998" alt="Bars" src="https://user-images.githubusercontent.com/55599388/76421992-dfb50880-63e7-11ea-92d3-0cc34ec36534.png"><br>
+・PHPが主体ですが、機能のselectメニューでJavaScriptを使用しています。
 
 ## Requirement　要件
 ・PHP 7.2.21<br>
-・MySQL（phpmyadmin）使用。
+・phpMyAdmin 4.9.0.1
 
 ## Usage　使用法
-・$API_keyには、Google MapsのAPI keyを入力する必要があります。
+・設定ファイル「ini.php」を環境に合わせて編集する必要があります。
+
+
 
