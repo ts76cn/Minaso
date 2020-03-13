@@ -27,11 +27,13 @@
 <img width="701" alt="login" src="https://user-images.githubusercontent.com/55599388/76420792-03774f00-63e6-11ea-8394-30e0a5a100cd.png"><br>
 ・メールアドレスの仮登録後、URLリンク付メールが送信され本登録画面へ遷移。
 
-・PHPが主体ですが、機能のselectメニューでJavaScriptを使用しています。
+### 広告リンク<br>
+<img width="712" alt="スクリーンショット 2020-03-13 14 01 31" src="https://user-images.githubusercontent.com/55599388/76591546-126c1780-6534-11ea-9c9e-deb42d509c4e.png">
 
 ## Requirement　要件
 ・PHP 7.2.21<br>
 ・phpMyAdmin 4.9.0.1
+・JavaScript（機能のselect表示）
 
 ## Usage　使用法
 ・設定ファイル「ini.php」を環境に合わせて編集する必要があります。
