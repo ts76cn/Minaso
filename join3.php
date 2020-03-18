@@ -27,7 +27,6 @@ require_once("lib.php");
 
 		//$_SESSION["EMAIL"]が存在したら
 		if(isset($_SESSION["EMAIL"])) {
-			print "test";
 			//check_input();
 			//エラー処理用変数
 			$err=0;
@@ -71,7 +70,7 @@ require_once("lib.php");
 <?php
 			}
 			exit();
-			//$_SESSION["EMAIL"]が存在しなかったら
+                //$_SESSION["EMAIL"]が存在しなかったら
 		} else {
 			// セッションを破棄
 			$_SESSION = array();

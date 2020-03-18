@@ -1,4 +1,9 @@
 <?php
+	// セッション生成
+	session_start();
+	// セッションを破棄
+	$_SESSION = array();
+	session_destroy();
 	// 初期設定を読み込む
 	require_once("ini.php");
 	// 関数ライブラリを読み込む
