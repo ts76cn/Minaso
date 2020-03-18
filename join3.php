@@ -70,7 +70,7 @@ require_once("lib.php");
 <?php
 			}
 			exit();
-                //$_SESSION["EMAIL"]が存在しなかったら
+        //$_SESSION["EMAIL"]が存在しなかったら
 		} else {
 			// セッションを破棄
 			$_SESSION = array();

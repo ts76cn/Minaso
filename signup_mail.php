@@ -75,11 +75,11 @@ require_once("lib.php");
                 }
                 //登録ユーザと管理者へメールを送信
                 $mailTo = $mail;
-                $body = 
-                "この度はご登録いただきありがとうございます。
-                24時間以内に下記のURLからご登録ください。
-                $url";
-
+                $body = <<< EOM
+                この度はご登録いただきありがとうございます。
+                24時間以内に下記のURLからご登録下さい。
+                {$url}
+EOM;
                 //メッセージを入力
                 mb_language('ja');
                 mb_internal_encoding('UTF-8');
