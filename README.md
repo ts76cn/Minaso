@@ -50,7 +50,7 @@
 
 ## Requirement　要件
 ・PHP 7.2.21<br>
-・phpMyAdmin 4.9.0.1<br>
+・phpMyAdmin 4.9.0.1（MySQL 5.7.26）<br>
 ・JavaScript（機能のselect表示）
 
 ## Usage　使用法
