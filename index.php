@@ -17,7 +17,8 @@
 		<!--CSSを適用-->
     	<link rel = "stylesheet" type = "text/css" href = "./css/minaso.css">
 		<title>みんなで遊ぼう！</title>
-<!--        <link rel="icon" href="./img/favicon.ico"> -->
+		<!--ファビコンを適用-->
+        <link rel="icon" href="./img/favicon.ico">
 	</head>
 
 	<body>

@@ -14,6 +14,8 @@ require_once("lib.php");
     	<!--CSSを適用-->
     	<link rel="stylesheet" type="text/css" href="./css/minaso.css">
         <title>みんなで遊ぼう！</title>
+		<!--ファビコンを適用-->
+        <link rel="icon" href="./img/favicon.ico">
 	</head>
 
 	<body>
@@ -398,7 +400,7 @@ require_once("lib.php");
 			$_SESSION = array();
 			session_destroy();
 			//セッションエラー画面表示
-			err_session("セッションエラーが起きています。再度ログインしてください。");
+			err_session("【！】セッションエラーです。　再度ログインしてください。");
 		}
 ?>
 	</body>

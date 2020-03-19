@@ -19,6 +19,8 @@ require_once("lib.php");
     	<!--CSSを適用-->
     	<link rel="stylesheet" type="text/css" href="./css/minaso.css">
         <title>みんなで遊ぼう！</title>
+		<!--ファビコンを適用-->
+        <link rel="icon" href="./img/favicon.ico">
 	</head>
 
 	<body>

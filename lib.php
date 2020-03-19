@@ -45,8 +45,9 @@ _EOT_;
     }
 
     //予定データ表示
-    //①予定データ抽出
     function html_yotei(){
+
+        //①予定データ抽出
         $link = mysqli_connect(_DB_HOST,_DB_USER,_DB_PASS,_DB_NAME);
         // 接続成功した場合
         if ($link) {
@@ -68,9 +69,8 @@ _EOT_;
             print 'DB接続失敗';
         }
 
+        //②予定の表示
         print "<h2>今日からの予定</h2>
-
-        <!--②予定の表示-->
         <table border=1>
             <tr>
                 <th>日付</th>
@@ -101,8 +101,9 @@ _EOT_;
 
 
     //変更データ表示
-    //①変更データ抽出
     function html_edit(){
+
+        //①変更データ抽出
         $link = mysqli_connect(_DB_HOST,_DB_USER,_DB_PASS,_DB_NAME);
         // 接続成功した場合
         if ($link) {
@@ -124,9 +125,8 @@ _EOT_;
             print 'DB接続失敗';
         }
 
-
-        print "<!--②変更データ表示-->
-        
+        //②変更データ表示
+        print "
         <table border=1>
             <tr>
                 <th>日付</th>
@@ -164,8 +164,9 @@ _EOT_;
     }
 
     //削除データ表示
-    //①削除データ抽出
     function html_del(){
+
+        //①削除データ抽出
         $link = mysqli_connect(_DB_HOST,_DB_USER,_DB_PASS,_DB_NAME);
         // 接続成功した場合
         if ($link) {
@@ -187,9 +188,8 @@ _EOT_;
             print 'DB接続失敗';
         }
 
-
-        print "<!--②削除データ表示-->
-        
+        //②削除データ表示
+        print "
         <table border=1>
             <tr>
                 <th>日付</th>
@@ -228,8 +228,9 @@ _EOT_;
 
 
     //参加表明データ表示
-    //①参加表明データ抽出
     function html_join(){
+
+        //①参加表明データ抽出
         $link = mysqli_connect(_DB_HOST,_DB_USER,_DB_PASS,_DB_NAME);
         // 接続成功した場合
         if ($link) {
@@ -251,8 +252,8 @@ _EOT_;
             print 'DB接続失敗';
         }
 
-        print "<!--②参加表明データ表示-->
-        
+        //②参加表明データ表示
+        print "
         <table border=1>
             <tr>
                 <th>日付</th>
@@ -291,8 +292,9 @@ _EOT_;
     }
 
     //参加取り消しデータ表示
-    //①参加取り消しデータ抽出
     function html_cancel(){
+
+        //①参加取り消しデータ抽出
         $link = mysqli_connect(_DB_HOST,_DB_USER,_DB_PASS,_DB_NAME);
         // 接続成功した場合
         if ($link) {
@@ -310,9 +312,8 @@ _EOT_;
             print 'DB接続失敗';
         }
 
-
-        print "<!--②参加取り消しデータ表示-->
-        
+        //②参加取り消しデータ表示
+        print "
         <table border=1>
             <tr>
                 <th>日付</th>
@@ -324,54 +325,55 @@ _EOT_;
                 <th>コメント</th>
                 <th>参加者</th>
                 <th></th>
-            </tr>
-            <!--ここからループ -->";
+            </tr>";
 
-        foreach ($asobi_data as $value) {
-            print "<tr>";
-            print "<td>" . htmlspecialchars($value['date1'], ENT_QUOTES, 'UTF-8') . "</td>";
-            print "<td>" . htmlspecialchars($value['time1'], ENT_QUOTES, 'UTF-8') . "</td>";
-            print "<td>" . htmlspecialchars($value['time2'], ENT_QUOTES, 'UTF-8') . "</td>";
-            print "<td>" . htmlspecialchars($value['place'], ENT_QUOTES, 'UTF-8') . "</td>";
-            print "<td>" . htmlspecialchars($value['asobi'], ENT_QUOTES, 'UTF-8') . "</td>";
-            print "<td>" . htmlspecialchars($value['sewanin'], ENT_QUOTES, 'UTF-8') . "</td>";
-            print "<td>" . htmlspecialchars($value['comment'], ENT_QUOTES, 'UTF-8') . "</td>";
-            $id = $value['id'];
-            $sewanin = htmlspecialchars($value['sewanin'], ENT_QUOTES, 'UTF-8');
-            print "<td>
-                <select name=\"cancel\">
-                    <option selected value=\"\">選　択</option>";
+            // ここからループ
+            foreach ($asobi_data as $value) {
+                print "<tr>";
+                    print "<td>" . htmlspecialchars($value['date1'], ENT_QUOTES, 'UTF-8') . "</td>";
+                    print "<td>" . htmlspecialchars($value['time1'], ENT_QUOTES, 'UTF-8') . "</td>";
+                    print "<td>" . htmlspecialchars($value['time2'], ENT_QUOTES, 'UTF-8') . "</td>";
+                    print "<td>" . htmlspecialchars($value['place'], ENT_QUOTES, 'UTF-8') . "</td>";
+                    print "<td>" . htmlspecialchars($value['asobi'], ENT_QUOTES, 'UTF-8') . "</td>";
+                    print "<td>" . htmlspecialchars($value['sewanin'], ENT_QUOTES, 'UTF-8') . "</td>";
+                    print "<td>" . htmlspecialchars($value['comment'], ENT_QUOTES, 'UTF-8') . "</td>";
+                    $id = $value['id'];
+                    $sewanin = htmlspecialchars($value['sewanin'], ENT_QUOTES, 'UTF-8');
+                    print "<td>
+                        <select name=\"cancel\">
+                            <option selected value=\"\">選　択</option>";
 
-                    $sankasya_string = $value['sankasya'];
-                    $sankasya_array = explode("<br>",$sankasya_string);
-            
-                    foreach($sankasya_array as $value) {
-                        print '<option value="' . $value . '">' . $value . '</option>';
+                            $sankasya_string = $value['sankasya'];
+                            $sankasya_array = explode("<br>",$sankasya_string);
+                    
+                            foreach($sankasya_array as $value) {
+                                print '<option value="' . $value . '">' . $value . '</option>';
 
-                        //上と同じ
-                        //print "<option value=\"" . $value . "\">" . $value . "</option>";
+                                //上と同じ
+                                //print "<option value=\"" . $value . "\">" . $value . "</option>";
 
-                    }
-                print "</select>
-            </td>";
+                            }
+                        print "</select>
+                    </td>";
 
-			print '<td><form method="post" action="cancel2.php">
-                    <input type="submit" name="submit" value="参加取り消し">
-                    <input type="hidden" name="id" value= "." $id ".">
-                    <input type="hidden" id="sankasya" name="sankasya" value= "." $cancel ".">
-                    <input type="hidden" id="sewanin" name="sewanin" value= "." $sewanin "." >
-                </form>
-            </td>';
-/*            
-			print "<td><form method=\"post\" action=\"cancel2.php\">
-                    <input type=\"submit\" name=\"submit\" value=\"参加取り消し\">
-                    <input type=\"hidden\" name=\"id\" value=\"\" . $id . \"\">
-                    <input type=\"hidden\" id=\"sewanin\" name=\"sewanin\" value=\"\" . $sewanin . \"\">
-                </form>
-            </td>";
- */
+                    print '<td>
+                        <form method="post" action="cancel2.php">
+                            <input type="submit" name="submit" value="参加取り消し">
+                            <input type="hidden" name="id" value= "." $id ".">
+                            <input type="hidden" id="sewanin" name="sewanin" value= "." $sewanin "." >
+                        </form>
+                    </td>';
+
+        /*            
+                    print "<td><form method=\"post\" action=\"cancel2.php\">
+                            <input type=\"submit\" name=\"submit\" value=\"参加取り消し\">
+                            <input type=\"hidden\" name=\"id\" value=\"\" . $id . \"\">
+                            <input type=\"hidden\" id=\"sewanin\" name=\"sewanin\" value=\"\" . $sewanin . \"\">
+                        </form>
+                    </td>";
+        */
                 print "</tr>";
-        }
+            }
         print "</table>";
     }
 
@@ -513,20 +515,12 @@ _EOT_;
     // ログインメッセージ表示関数　ログイン画面に戻る
     function err_session($msg) {
         global $fileLOGOUT, $appli_name;
-        html_header();
+        html_header2();
 ?>
-        print <div id = "container">
-            <div id="header">
-                <div id="headerLeft">
-                    <h1>$appli_name</h1>
-                </div>
-                <div id="headerRight"></div>
-            </div>
-            <div id="center">
-                <p>$msg</p>
-                <p><a href="$fileLOGOUT">ログイン画面に戻る</a></p>
-            </div>
-        </div>;
+        <div id="center">
+            <p><?= $msg ?></p>
+            <p><a href="<?= $fileLOGOUT ?>">ログイン画面に戻る</a></p>
+        </div>
 <?php
         html_footer();
         exit();
