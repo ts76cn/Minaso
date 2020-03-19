@@ -115,9 +115,9 @@ require_once("lib.php");
 				//登録ユーザへ仮登録されたメールを送信
 				$mailTo = $mail;
 				$mailBcc = "ts76cn@gmail.com";
-				$body = <<< EOM
-				この度はご登録いただきありがとうございます。
-				本登録致しました。
+	$body = <<< EOM
+	この度はご登録いただきありがとうございます。
+	本登録致しました。
 EOM;
 				//Fromヘッダーを作成
 				$header = 'From: ' . mb_encode_mimeheader($companyname). ' <' . $companymail. '>';
