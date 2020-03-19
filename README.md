@@ -54,6 +54,7 @@
 ・JavaScript（機能のselect表示）
 
 ## Usage　使用法
+・sqlフォルダ内「minaso.sql」でtable作成が可能です。
 ・設定ファイル「ini.php」を環境に合わせて編集する必要があります。
 
 
