@@ -1,5 +1,5 @@
 # みんなで遊ぼう！仙台
-・子供の遊び約束を目的とした掲示板です。
+・子供の遊び約束を目的とした掲示板です。<br>
 
 ## Overview　概要
 ①予定の登録<br>
@@ -51,11 +51,11 @@
 ## Requirement　要件
 ・PHP 7.2.21<br>
 ・phpMyAdmin 4.9.0.1（MySQL 5.7.26）<br>
-・JavaScript（機能のselect表示）
+・JavaScript（機能のselect表示）<br>
 
 ## Usage　使用法
-・sqlフォルダ内「minaso.sql」でtable作成が可能です。
-・設定ファイル「ini.php」を環境に合わせて編集する必要があります。
+・sqlフォルダ内「minaso.sql」でtable作成が可能です。<br>
+・設定ファイル「ini.php」を環境に合わせて編集する必要があります。<br>
 
 
 
