@@ -329,6 +329,7 @@ _EOT_;
 
             // ここからループ
             foreach ($asobi_data as $value) {
+                print '<form method="post" action="cancel2.php">';
                 print "<tr>";
                     print "<td>" . htmlspecialchars($value['date1'], ENT_QUOTES, 'UTF-8') . "</td>";
                     print "<td>" . htmlspecialchars($value['time1'], ENT_QUOTES, 'UTF-8') . "</td>";
@@ -357,11 +358,11 @@ _EOT_;
                     </td>";
 
                     print '<td>
-                        <form method="post" action="cancel2.php">
+
                             <input type="submit" name="submit" value="参加取り消し">
-                            <input type="hidden" name="id" value= "." $id ".">
-                            <input type="hidden" id="sewanin" name="sewanin" value= "." $sewanin "." >
-                        </form>
+                            <input type="hidden" name="id" value= "'. $id .'">
+                            <input type="hidden" id="sewanin" name="sewanin" value= "'. $sewanin .'" >
+
                     </td>';
 
         /*            
@@ -373,6 +374,7 @@ _EOT_;
                     </td>";
         */
                 print "</tr>";
+                print "</form>";
             }
         print "</table>";
     }
