@@ -32,7 +32,7 @@ _EOT_;
     function html_help() {
         global $fileHELP;
         print "<form action=\"\">
-            <a href=\"#\" onClick=\"MM_openBrWindow('$fileHELP','help','scrollbars=yes,resizable=yes,width=660,height=500')\">はじめに</a>　
+            <a href=\"$fileHELP\">はじめに</a>
         </form>";
     }
 
