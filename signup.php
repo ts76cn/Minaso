@@ -114,12 +114,12 @@ require_once("lib.php");
 				//プレースホルダへ実際の値を設定する
 				$stm->bindValue(':mail', $mail, PDO::PARAM_STR);
 				$stm->execute();
-				//登録ユーザへ仮登録されたメールを送信
+				//登録ユーザと管理者へ本登録されたメールを送信
 				$mailTo = $mail;
-				$mailBcc = "ts76cn@gmail.com";
-	$body = <<< EOM
-	この度はご登録いただきありがとうございます。
-	本登録致しました。
+				$mailBcc = $companymail;
+$body = <<< EOM
+この度はご登録いただきありがとうございます。
+本登録致しました。
 EOM;
 				//Fromヘッダーを作成
 				$header = 'From: ' . mb_encode_mimeheader($companyname). ' <' . $companymail. '>';

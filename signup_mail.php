@@ -75,12 +75,12 @@ require_once("lib.php");
                     print('Error:'.$e->getMessage());
                     die();
                 }
-                //登録ユーザと管理者へメールを送信
+                //登録ユーザへメールを送信
                 $mailTo = $mail;
-    $body = <<< EOM
-    この度はご登録いただきありがとうございます。
-    24時間以内に下記のURLからご登録下さい。
-    {$url}
+$body = <<< EOM
+この度はご登録いただきありがとうございます。
+24時間以内に下記のURLからご登録下さい。
+{$url}
 EOM;
                 //メッセージを入力
                 mb_language('ja');

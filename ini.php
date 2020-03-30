@@ -28,9 +28,9 @@ define("_DB_TYPE", "mysql");
 // データベースホスト名
 define("_DB_HOST", "localhost");
 // データベース名
-define("_DB_NAME", "minaso");
+define("_DB_NAME", "dbminaso");
 // データベース接続ユーザー名
-define("_DB_USER", "minasouser");
+define("_DB_USER", "minaso_user");
 // データベース接続パスワード
 define("_DB_PASS", "password");
 
