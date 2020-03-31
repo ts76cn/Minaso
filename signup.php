@@ -123,7 +123,8 @@ $body = <<< EOM
 EOM;
 				//Fromヘッダーを作成
 				$header = 'From: ' . mb_encode_mimeheader($companyname). ' <' . $companymail. '>';
-				if(mb_send_mail($mailTo, $registation_mail_subject, $body, $header, '-f'. $companymail) && mb_send_mail($mailBcc, $registation_mail_subject, $body, $header, '-f'. $companymail)) {
+//				if(mb_send_mail($mailTo, $registation_mail_subject, $body, $header, '-f'. $companymail) && mb_send_mail($mailBcc, $registation_mail_subject, $body, $header, '-f'. $companymail)) {
+				if(mb_send_mail($mailTo, $registation_mail_subject, $body, $header) && mb_send_mail($mailBcc, $registation_mail_subject, $body, $header)) {
 					$message['success'] = "会員登録しました";
 				}else{
 					$errors['mail_error'] = "メールの送信に失敗しました。";
