@@ -1,6 +1,6 @@
 # みんなで遊ぼう！仙台
 ・子供の遊び約束を目的とした掲示板です。<br>
-https://ts76cn.com/index.php
+https://ts76cn.com
 で実際の操作が可能です。
 
 ## Overview　概要
